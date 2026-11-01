@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explore Jammu and Kashmir</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f1f6ed;
+    color: #30483b;
+}
+
+/* HERO HEADER */
+
+header {
+    background: linear-gradient(135deg, #123b32, #28765d, #8eae8d);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 43px;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #153e33;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px 13px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #719a78;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 1100px;
+    background: #e0ecdf;
+    border-radius: 18px;
+}
+
+.intro h2 {
+    color: #205d49;
+    font-size: 29px;
+}
+
+.intro p {
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* CATEGORY SECTION */
+
+.category {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1150px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(25,70,45,0.12);
+}
+
+.category h2 {
+    color: #23634c;
+    font-size: 27px;
+    border-bottom: 3px solid #b5cdb0;
+    padding-bottom: 14px;
+}
+
+.category-intro {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+figure {
+    width: 310px;
+    margin: 0;
+    padding: 12px;
+    background: linear-gradient(145deg, #ffffff, #e1eee2);
+    border-radius: 18px;
+    box-shadow: 0 7px 20px rgba(20,65,45,0.18);
+    text-align: center;
+    transition: 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(20,65,45,0.28);
+}
+
+figure img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 13px;
+    border: 3px solid white;
+}
+
+figcaption {
+    color: #174d3b;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 5px;
+}
+
+/* INFORMATION CARDS */
+
+.details {
+    background: #f4f8f0;
+    padding: 22px;
+    border-radius: 13px;
+    margin-top: 20px;
+    border-left: 5px solid #659879;
+}
+
+.details h3 {
+    color: #24634d;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.details p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+/* BACK TO TOP */
+
+.top {
+    text-align: center;
+    padding: 20px;
+}
+
+.top a {
+    background: #286b53;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(135deg, #123b32, #28765d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 35px;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    .category {
+        margin: 12px;
+        padding: 18px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="top">
+    <h1>JAMMU & KASHMIR</h1>
+    <h2>Explore the Paradise on Earth</h2>
+    <p>✦ NATURE ✦ CULTURE ✦ HERITAGE ✦</p>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="places.html">PLACES TO VISIT</a>
+    <a href="shopping.html">SHOPPING</a>
+    <a href="contact.html">CONTACT US</a>
+</nav>
+
+<div class="intro">
+
+    <h2>Discover the Beauty of Jammu & Kashmir</h2>
+
+    <p>
+        Welcome to the land of beautiful mountains,
+        peaceful lakes, colourful gardens and rich traditions.
+        Jammu and Kashmir is one of India's most fascinating
+        tourist destinations. From snow-covered mountains
+        to ancient temples, every place has something special
+        to offer. Explore the famous attractions of this
+        beautiful region!
+    </p>
+
+</div>
+
+
+<!-- 01 NATURE AND SCENIC BEAUTY -->
+
+<div class="category">
+
+    <h2>01. Nature and Scenic Beauty</h2>
+
+    <p class="category-intro">
+        Experience breathtaking Himalayan mountains,
+        green valleys, beautiful meadows and peaceful
+        natural landscapes.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="gulmarg.jpg" alt="Gulmarg">
+            <figcaption>Gulmarg – Meadow of Flowers</figcaption>
+        </figure>
+
+        <figure>
+            <img src="pahalgam.jpg" alt="Pahalgam">
+            <figcaption>Pahalgam – Valley of Shepherds</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Gulmarg</h3>
+        <p>
+            Gulmarg is a beautiful hill station surrounded
+            by snow-covered mountains. It is famous for
+            skiing, green meadows and the Gulmarg Gondola
+            cable car. It attracts tourists throughout
+            the year and is a popular destination for
+            adventure and nature lovers.
+        </p>
+
+        <h3>Pahalgam</h3>
+        <p>
+            Pahalgam is known for its green valleys, rivers,
+            pine forests and beautiful mountains. It is
+            a popular destination for sightseeing, nature
+            walks and enjoying peaceful surroundings.
+            The beautiful Lidder River adds to its charm.
+        </p>
+
+        <h3>Sonamarg</h3>
+        <p>
+            Sonamarg means Meadow of Gold. It is famous
+            for its glaciers, snow-covered peaks and
+            beautiful valleys. It offers amazing views
+            of the Himalayan landscape.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- 02 RELIGIOUS PLACES -->
+
+<div class="category">
+
+    <h2>02. Religious and Pilgrimage Places</h2>
+
+    <p class="category-intro">
+        Discover important spiritual destinations,
+        ancient temples and sacred pilgrimage sites
+        visited by thousands of devotees.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="vaishnodevi.jpg" alt="Vaishno Devi">
+            <figcaption>Vaishno Devi Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="amarnath.jpg" alt="Amarnath Cave">
+            <figcaption>Amarnath Cave</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Vaishno Devi Temple</h3>
+        <p>
+            Vaishno Devi Temple is an important Hindu
+            pilgrimage site located in the Trikuta Hills
+            near Katra. Thousands of devotees visit this
+            holy shrine every year to seek blessings.
+        </p>
+
+        <h3>Amarnath Cave</h3>
+        <p>
+            Amarnath Cave is a famous Hindu pilgrimage
+            destination located in the Himalayas. It is
+            known for the naturally formed ice Shivling
+            and the annual Amarnath Yatra.
+        </p>
+
+        <h3>Shankaracharya Temple</h3>
+        <p>
+            Shankaracharya Temple is an ancient temple
+            dedicated to Lord Shiva. It is situated on
+            a hill in Srinagar and offers beautiful
+            views of Dal Lake and the city.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- 03 HISTORICAL PLACES -->
+
+<div class="category">
+
+    <h2>03. Historical and Cultural Places</h2>
+
+    <p class="category-intro">
+        Explore the rich history, traditional architecture,
+        ancient forts and magnificent monuments of Jammu
+        and Kashmir.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="bahufort.jpg" alt="Bahu Fort">
+            <figcaption>Bahu Fort – Historic Heritage</figcaption>
+        </figure>
+
+        <figure>
+            <img src="parimahal.jpg" alt="Pari Mahal">
+            <figcaption>Pari Mahal – Palace of Fairies</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Bahu Fort</h3>
+        <p>
+            Bahu Fort is a historical fort located in Jammu.
+            It is one of the important historical attractions
+            of the region and is also known for the
+            Bawe Wali Mata Temple.
+        </p>
+
+        <h3>Pari Mahal</h3>
+        <p>
+            Pari Mahal is a historical monument situated
+            above Dal Lake in Srinagar. It is famous for
+            its terraced gardens, historical importance
+            and beautiful views of the city.
+        </p>
+
+        <h3>Mubarak Mandi Palace</h3>
+        <p>
+            Mubarak Mandi Palace is a historical palace
+            complex in Jammu. It is known for its beautiful
+            architecture and combination of different
+            architectural styles.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- 04 LAKES AND GARDENS -->
+
+<div class="category">
+
+    <h2>04. Famous Lakes and Gardens</h2>
+
+    <p class="category-intro">
+        Enjoy the peaceful lakes, beautiful Mughal gardens,
+        colourful flowers and charming scenery of Kashmir.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="dal.jpeg" alt="Dal Lake">
+            <figcaption>Dal Lake – Jewel of Srinagar</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>Dal Lake</h3>
+        <p>
+            Dal Lake is one of the most famous attractions
+            of Srinagar. It is known for its floating gardens,
+            colourful Shikaras and traditional houseboats.
+            It is often called the Jewel in the Crown of Kashmir.
+        </p>
+
+        <h3>Nishat Bagh</h3>
+        <p>
+            Nishat Bagh is a beautiful Mughal garden
+            located near Dal Lake. It is famous for its
+            terraces, fountains, flowers and stunning
+            mountain views.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="top">
+    <a href="#top">↑ BACK TO TOP</a>
+</div>
+
+
+<footer>
+
+    <h2>VISIT JAMMU & KASHMIR</h2>
+
+    <p>
+        Discover nature, explore culture and experience
+        the beauty of Paradise on Earth.
+    </p>
+
+    <h3>✦ PARADISE ON EARTH ✦</h3>
+
+    <p>Created as a School Computer Science Project</p>
+
+</footer>
+
+</body>
+</html>

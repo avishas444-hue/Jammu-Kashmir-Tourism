@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Jammu and Kashmir Tourism</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f1f6ed;
+    color: #30483b;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background: #153e33;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px 13px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #719a78;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(
+        rgba(10, 40, 30, 0.48),
+        rgba(10, 40, 30, 0.65)
+    ), url("dal.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 12px;
+    text-shadow: 2px 3px 8px black;
+}
+
+.hero h2 {
+    font-size: 27px;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero p {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.hero a {
+    background: #d6bd83;
+    color: #183d32;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: Arial;
+}
+
+.hero a:hover {
+    background: white;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 40px 30px;
+    margin: 35px auto;
+    max-width: 1100px;
+    background: #e0ecdf;
+    border-radius: 20px;
+}
+
+.intro h2 {
+    color: #205d49;
+    font-size: 30px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* SECTION HEADINGS */
+
+.section-title {
+    text-align: center;
+    color: #205d49;
+    font-size: 30px;
+    margin: 40px 10px 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 0 15px;
+}
+
+/* HIGHLIGHT CARDS */
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.card {
+    width: 310px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 7px 20px rgba(20,65,45,0.15);
+    text-align: center;
+    transition: 0.3s;
+    padding-bottom: 25px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(20,65,45,0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #23634c;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+.card p {
+    padding: 0 18px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background: #286b53;
+    color: white;
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #153e33;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: white;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(25,70,45,0.12);
+}
+
+.about h2 {
+    color: #23634c;
+    font-size: 28px;
+}
+
+.about p {
+    line-height: 1.9;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* WHY VISIT SECTION */
+
+.why {
+    background: #e1eee2;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.why h2 {
+    color: #205d49;
+}
+
+.why ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2.2;
+    font-size: 16px;
+}
+
+/* SPECIAL MESSAGE */
+
+.special {
+    text-align: center;
+    background: linear-gradient(120deg, #dcebd9, #f6f2df);
+    margin: 35px auto;
+    max-width: 1100px;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.special h2 {
+    color: #205d49;
+}
+
+.special p {
+    line-height: 1.9;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(135deg, #123b32, #28765d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+}
+
+footer .creator {
+    color: #e3d3a6;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+footer p {
+    line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .intro, .about, .why, .special {
+        margin: 15px;
+        padding: 22px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<div class="hero">
+
+    <h1>JAMMU & KASHMIR</h1>
+
+    <h2>Welcome to the Paradise on Earth</h2>
+
+    <p>
+        ✦ Discover Nature • Explore Culture • Experience Beauty ✦
+    </p>
+
+    <a href="places.html">EXPLORE NOW</a>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="places.html">PLACES TO VISIT</a>
+
+    <a href="shopping.html">SHOPPING</a>
+
+    <a href="contact.html">CONTACT US</a>
+
+</nav>
+
+
+<!-- INTRODUCTION -->
+
+<div class="intro">
+
+    <h2>Discover the Heaven of India</h2>
+
+    <p>
+        Jammu and Kashmir is one of the most beautiful
+        regions of India, famous for its snow-covered
+        mountains, green valleys, sparkling lakes and
+        colourful gardens.
+
+        Known as the Paradise on Earth, this wonderful
+        destination is also rich in culture, history,
+        traditional handicrafts and delicious cuisine.
+
+        Explore the beauty and charm of Jammu and Kashmir
+        through our tourism website!
+    </p>
+
+</div>
+
+
+<!-- EXPLORE OUR WEBSITE -->
+
+<h2 class="section-title">Explore Our Website</h2>
+
+<p class="section-subtitle">
+    Discover the most exciting things Jammu and Kashmir has to offer.
+</p>
+
+<div class="highlights">
+
+    <!-- PLACES CARD -->
+
+    <div class="card">
+
+        <img src="gulmarg.jpg" alt="Beautiful Gulmarg">
+
+        <h3>Places to Visit</h3>
+
+        <p>
+            Explore beautiful valleys, famous lakes,
+            religious destinations and historical
+            monuments of Jammu and Kashmir.
+        </p>
+
+        <a href="places.html">Explore Places</a>
+
+    </div>
+
+
+    <!-- SHOPPING CARD -->
+
+    <div class="card">
+
+        <img src="pashminashawl.jpg" alt="Kashmiri Pashmina">
+
+        <h3>Shopping</h3>
+
+        <p>
+            Discover traditional Pashmina shawls,
+            colourful Paper Mache handicrafts
+            and famous Kashmiri saffron.
+        </p>
+
+        <a href="shopping.html">Explore Shopping</a>
+
+    </div>
+
+
+    <!-- CONTACT CARD -->
+
+    <div class="card">
+
+        <img src="parimahal.jpg" alt="Beautiful Pari Mahal">
+
+        <h3>Contact Us</h3>
+
+        <p>
+            Have questions or suggestions?
+            Visit our contact page and share
+            your valuable feedback with us.
+        </p>
+
+        <a href="contact.html">Contact Us</a>
+
+    </div>
+
+</div>
+
+
+<!-- ABOUT JAMMU AND KASHMIR -->
+
+<div class="about">
+
+    <h2>About Jammu and Kashmir</h2>
+
+    <p>
+        Jammu and Kashmir is a region in the northern
+        part of India, known for its extraordinary
+        natural beauty and cultural diversity.
+
+        The region is surrounded by magnificent
+        Himalayan mountains and is home to famous
+        destinations such as Srinagar, Gulmarg,
+        Pahalgam and Sonamarg.
+
+        It is also known for its traditional
+        Kashmiri handicrafts, Pashmina shawls,
+        Paper Mache art, saffron and beautiful
+        gardens.
+
+        The combination of natural beauty,
+        historical heritage and rich traditions
+        makes Jammu and Kashmir a special
+        destination for travellers.
+    </p>
+
+</div>
+
+
+<!-- WHY VISIT -->
+
+<div class="why">
+
+    <h2>Why Visit Jammu and Kashmir?</h2>
+
+    <ul>
+
+        <li>Beautiful snow-covered Himalayan mountains.</li>
+
+        <li>Famous lakes and traditional Shikara rides.</li>
+
+        <li>Green valleys and colourful Mughal gardens.</li>
+
+        <li>Ancient temples and historical monuments.</li>
+
+        <li>Traditional handicrafts and Pashmina shawls.</li>
+
+        <li>World-famous Kashmiri saffron.</li>
+
+        <li>Rich culture, traditions and delicious food.</li>
+
+    </ul>
+
+</div>
+
+
+<!-- SPECIAL MESSAGE -->
+
+<div class="special">
+
+    <h2>Experience the Magic of Kashmir!</h2>
+
+    <p>
+        From the peaceful beauty of Dal Lake to the
+        snowy mountains of Gulmarg, every corner
+        of Jammu and Kashmir has a story to tell.
+
+        Come and explore the land where nature,
+        culture and heritage come together.
+    </p>
+
+    <h3>✦ PARADISE ON EARTH ✦</h3>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>JAMMU & KASHMIR TOURISM</h2>
+
+    <p>
+        Discover Nature • Explore Culture • Celebrate Heritage
+    </p>
+
+    <hr style="width:60%; border:1px solid #8fae91;">
+
+    <p>Designed & Developed by</p>
+
+    <div class="creator">
+        Tanmay Sharma
+    </div>
+
+    <p>✦ THANK YOU FOR VISITING ✦</p>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Shopping in Jammu and Kashmir</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f1f6ed;
+    color: #30483b;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #123b32, #28765d, #a0b995);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #153e33;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px 13px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #719a78;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 1100px;
+    background: #e0ecdf;
+    border-radius: 18px;
+}
+
+.intro h2 {
+    color: #205d49;
+    font-size: 29px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* SHOPPING SECTION */
+
+.shop-section {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1150px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(25,70,45,0.12);
+}
+
+.shop-section h2 {
+    color: #23634c;
+    font-size: 28px;
+    border-bottom: 3px solid #b5cdb0;
+    padding-bottom: 14px;
+}
+
+.section-intro {
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/* PRODUCT GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    margin: 30px 0;
+}
+
+figure {
+    width: 310px;
+    margin: 0;
+    padding: 13px;
+    background: linear-gradient(145deg, #ffffff, #e1eee2);
+    border-radius: 18px;
+    box-shadow: 0 7px 20px rgba(20,65,45,0.18);
+    text-align: center;
+    transition: 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(20,65,45,0.28);
+}
+
+figure img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 13px;
+    border: 3px solid white;
+}
+
+figcaption {
+    color: #174d3b;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+/* PRODUCT DETAILS */
+
+.details {
+    background: #f4f8f0;
+    padding: 22px;
+    border-radius: 13px;
+    border-left: 5px solid #659879;
+    margin-top: 20px;
+}
+
+.details h3 {
+    color: #24634d;
+    font-size: 22px;
+}
+
+.details p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.details ul {
+    line-height: 2;
+}
+
+/* SPECIAL SHOPPING BOX */
+
+.highlight {
+    background: #e3eee1;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.highlight h2 {
+    color: #205d49;
+}
+
+.highlight p {
+    line-height: 1.9;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(135deg, #123b32, #28765d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 35px;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+}
+
+/* BACK TO TOP */
+
+.top {
+    text-align: center;
+    padding: 20px;
+}
+
+.top a {
+    background: #286b53;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    .shop-section {
+        margin: 12px;
+        padding: 18px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MAIN HEADER -->
+
+<header id="top">
+
+    <h1>JAMMU & KASHMIR</h1>
+
+    <h2>Shopping and Traditional Treasures</h2>
+
+    <p>✦ HANDICRAFTS ✦ TEXTILES ✦ SPICES ✦</p>
+
+</header>
+
+
+<!-- NAVIGATION MENU -->
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="places.html">PLACES TO VISIT</a>
+
+    <a href="shopping.html">SHOPPING</a>
+
+    <a href="contact.html">CONTACT US</a>
+
+</nav>
+
+
+<!-- INTRODUCTION -->
+
+<div class="intro">
+
+    <h2>Discover the Traditional Shopping of Kashmir</h2>
+
+    <p>
+        Jammu and Kashmir is famous for its beautiful
+        handicrafts, traditional textiles, aromatic spices
+        and artistic products. The markets of Kashmir
+        reflect its rich culture, creativity and heritage.
+        From luxurious Pashmina shawls to colourful
+        Paper Mache art and world-famous saffron,
+        the region offers many unique shopping treasures.
+    </p>
+
+</div>
+
+
+<!-- 01 PASHMINA SHAWL -->
+
+<div class="shop-section">
+
+    <h2>01. Traditional Kashmiri Pashmina Shawl</h2>
+
+    <p class="section-intro">
+        Pashmina is one of the most famous traditional
+        textile products of Kashmir. It is admired for
+        its softness, warmth and delicate craftsmanship.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+
+            <img src="pashminashawl.jpg"
+            alt="Traditional Kashmiri Pashmina Shawl">
+
+            <figcaption>
+                Kashmiri Pashmina Shawl
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>About Pashmina Shawls</h3>
+
+        <p>
+            Pashmina shawls are traditional luxury textiles
+            associated with Kashmir. They are made from
+            fine cashmere wool obtained from the undercoat
+            of Changthangi goats. These shawls are known
+            for their softness, lightweight texture and
+            excellent warmth.
+        </p>
+
+        <h3>Special Features</h3>
+
+        <ul>
+            <li>Made from fine and soft cashmere fibres.</li>
+            <li>Lightweight, warm and comfortable.</li>
+            <li>Known for delicate embroidery and designs.</li>
+            <li>Available in different colours and patterns.</li>
+            <li>Represents the traditional craftsmanship of Kashmir.</li>
+        </ul>
+
+        <h3>Uses</h3>
+
+        <p>
+            Pashmina shawls are used as winter accessories,
+            elegant clothing items and special traditional
+            gifts. They are also valued as examples of
+            Kashmiri textile art.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- 02 PAPER MACHE -->
+
+<div class="shop-section">
+
+    <h2>02. Kashmiri Paper Mache Handicrafts</h2>
+
+    <p class="section-intro">
+        Paper Mache is a beautiful traditional art form
+        of Kashmir. It is famous for colourful patterns,
+        floral designs and detailed hand painting.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+
+            <img src="papermache.jpeg"
+            alt="Kashmiri Paper Mache Handicraft">
+
+            <figcaption>
+                Kashmiri Paper Mache Art
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>About Paper Mache</h3>
+
+        <p>
+            Paper Mache is a traditional handicraft
+            technique in which paper pulp is shaped
+            into decorative objects. After drying,
+            the objects are painted with beautiful
+            colours and detailed artistic designs.
+            Kashmiri artisans are especially known
+            for their delicate floral patterns.
+        </p>
+
+        <h3>Special Features</h3>
+
+        <ul>
+            <li>Made using paper pulp and traditional techniques.</li>
+            <li>Decorated with colourful hand-painted designs.</li>
+            <li>Features floral patterns and artistic details.</li>
+            <li>Represents the creativity of Kashmiri artisans.</li>
+            <li>Available in many decorative shapes and sizes.</li>
+        </ul>
+
+        <h3>Uses</h3>
+
+        <p>
+            Paper Mache products are used as decorative
+            showpieces, jewellery boxes, trays, bowls,
+            vases and beautiful souvenirs. They are
+            popular gifts for visitors.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- 03 KASHMIRI SAFFRON -->
+
+<div class="shop-section">
+
+    <h2>03. Kashmiri Saffron – The Golden Spice</h2>
+
+    <p class="section-intro">
+        Kashmir is famous for its high-quality saffron,
+        a valuable spice known for its rich aroma,
+        natural colour and culinary importance.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+
+            <img src="saffron.jpg"
+            alt="Kashmiri Saffron">
+
+            <figcaption>
+                Kashmiri Saffron – Kesar
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+    <div class="details">
+
+        <h3>About Kashmiri Saffron</h3>
+
+        <p>
+            Saffron, commonly known as Kesar, is obtained
+            from the dried red stigmas of the flower
+            Crocus sativus. Kashmir is well known for
+            saffron cultivation, especially in the
+            Pampore region. It is valued for its distinctive
+            aroma, colour and flavour.
+        </p>
+
+        <h3>Special Features</h3>
+
+        <ul>
+            <li>Obtained from the red stigmas of Crocus sativus.</li>
+            <li>Known for its pleasant aroma and rich colour.</li>
+            <li>Used as a natural food colouring and flavouring.</li>
+            <li>Requires careful harvesting and processing.</li>
+            <li>Kashmiri saffron is a famous regional speciality.</li>
+        </ul>
+
+        <h3>Uses</h3>
+
+        <p>
+            Saffron is used in traditional dishes,
+            sweets, desserts, milk preparations and
+            special festive foods. It is an important
+            part of Kashmiri culinary culture.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- SHOPPING HIGHLIGHT -->
+
+<div class="highlight">
+
+    <h2>Why Shop in Jammu & Kashmir?</h2>
+
+    <p>
+        ✦ Unique traditional handicrafts<br>
+        ✦ Beautiful handmade products<br>
+        ✦ Rich textile and artistic heritage<br>
+        ✦ Famous regional spices<br>
+        ✦ Wonderful souvenirs and gift items
+    </p>
+
+    <p>
+        Shopping in Kashmir is not just about buying
+        products; it is also about experiencing the
+        culture, traditions and artistic skills of
+        local craftsmen.
+    </p>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+
+<div class="top">
+
+    <a href="#top">↑ BACK TO TOP</a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>SHOPPING IN JAMMU & KASHMIR</h2>
+
+    <p>
+        Take home a piece of Kashmir's beauty,
+        culture and craftsmanship.
+    </p>
+
+    <h3>✦ TRADITION • ART • HERITAGE ✦</h3>
+
+    <p>Created as a School Computer Science Project</p>
+
+</footer>
+
+</body>
+</html>

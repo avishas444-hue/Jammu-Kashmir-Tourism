@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Contact Us - Jammu and Kashmir Tourism</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f1f6ed;
+    color: #30483b;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #123b32, #28765d, #a0b995);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #153e33;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px 13px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #719a78;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 1100px;
+    background: #e0ecdf;
+    border-radius: 18px;
+}
+
+.intro h2 {
+    color: #205d49;
+    font-size: 29px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.contact-card {
+    background: white;
+    width: 300px;
+    padding: 28px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(25,70,45,0.13);
+    border-bottom: 5px solid #659879;
+}
+
+.contact-card h3 {
+    color: #23634c;
+    font-size: 22px;
+}
+
+.contact-card p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* CONTACT FORM */
+
+.form-section {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 22px rgba(25,70,45,0.13);
+}
+
+.form-section h2 {
+    color: #23634c;
+    text-align: center;
+    font-size: 29px;
+}
+
+.form-section p {
+    text-align: center;
+    line-height: 1.8;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+    color: #245b45;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    border: 1px solid #b6cdb7;
+    border-radius: 9px;
+    font-family: Arial;
+    font-size: 15px;
+    background: #f8fbf6;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+button {
+    background: #286b53;
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+button:hover {
+    background: #153e33;
+}
+
+/* MESSAGE BOX */
+
+.message {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    text-align: center;
+    background: #e3eee1;
+    border-radius: 18px;
+}
+
+.message h2 {
+    color: #205d49;
+}
+
+.message p {
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(135deg, #123b32, #28765d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 35px;
+}
+
+footer h2 {
+    letter-spacing: 3px;
+}
+
+/* BACK TO TOP */
+
+.top {
+    text-align: center;
+    padding: 20px;
+}
+
+.top a {
+    background: #286b53;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    .form-section {
+        margin: 15px;
+        padding: 22px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header id="top">
+
+    <h1>JAMMU & KASHMIR</h1>
+
+    <h2>Contact Us</h2>
+
+    <p>✦ WE WOULD LOVE TO HEAR FROM YOU ✦</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="places.html">PLACES TO VISIT</a>
+
+    <a href="shopping.html">SHOPPING</a>
+
+    <a href="contact.html">CONTACT US</a>
+
+</nav>
+
+
+<!-- INTRODUCTION -->
+
+<div class="intro">
+
+    <h2>Get in Touch With Us</h2>
+
+    <p>
+        Thank you for visiting our Jammu and Kashmir
+        Tourism website. We are happy to help you
+        explore the beautiful valleys, lakes, gardens,
+        historical monuments and traditional culture
+        of Jammu and Kashmir.
+
+        If you have any questions, suggestions or
+        feedback about our website, feel free to
+        contact us through the information and
+        feedback form given below.
+    </p>
+
+</div>
+
+
+<!-- CONTACT INFORMATION -->
+
+<div class="contact-container">
+
+    <div class="contact-card">
+
+        <h3>📍 Our Location</h3>
+
+        <p>
+            Jammu and Kashmir<br>
+            India
+        </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+        <h3>🌐 Website</h3>
+
+        <p>
+            Jammu and Kashmir Tourism<br>
+            Explore the Paradise on Earth
+        </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+        <h3>✉️ Email</h3>
+
+        <p>
+            For questions and suggestions,<br>
+            please use our feedback form.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- CONTACT FORM -->
+
+<div class="form-section">
+
+    <h2>Send Us Your Message</h2>
+
+    <p>
+        Share your thoughts, suggestions
+        and feedback with us.
+    </p>
+
+    <form action="#" method="post">
+
+        <label for="name">Your Name:</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+
+
+        <label for="email">Email Address:</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+        >
+
+
+        <label for="subject">Subject:</label>
+
+        <select id="subject" name="subject">
+
+            <option value="">Select a subject</option>
+
+            <option>Tourism Information</option>
+
+            <option>Places to Visit</option>
+
+            <option>Shopping Information</option>
+
+            <option>General Enquiry</option>
+
+            <option>Feedback</option>
+
+        </select>
+
+
+        <label for="message">Your Message:</label>
+
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Submit Message
+        </button>
+
+    </form>
+
+</div>
+
+
+<!-- SPECIAL MESSAGE -->
+
+<div class="message">
+
+    <h2>Thank You for Visiting!</h2>
+
+    <p>
+        Jammu and Kashmir is a land of breathtaking
+        natural beauty, rich traditions, delicious
+        cuisine and wonderful handicrafts.
+
+        We hope our website helped you discover
+        the beauty and cultural heritage of this
+        wonderful region.
+
+    </p>
+
+    <h3>✦ EXPLORE • EXPERIENCE • ENJOY ✦</h3>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+
+<div class="top">
+
+    <a href="#top">↑ BACK TO TOP</a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>JAMMU & KASHMIR TOURISM</h2>
+
+    <p>
+        Discover the Beauty of Paradise on Earth
+    </p>
+
+    <p>
+        Created as a School Computer Science Project
+    </p>
+
+    <h3>✦ THANK YOU ✦</h3>
+
+</footer>
+
+</body>
+</html>
